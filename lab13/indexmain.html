@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		body {
+			background-color: aliceblue;
+			text-align: center;
+		}
+
+		.block {
+			float: left;
+			line-height: 50px;
+			font-size: 30px;
+			background: #A6B4F7;
+			color: white;
+			margin-top: 10px;
+			width: 300px;
+			margin-right: 10px;
+			margin-left: 10px;
+			text-align: center;
+			padding-top: 2%;
+		}
+
+		.result {
+			font-size: 40px;
+			margin-top: 30%;
+		}
+
+		#info {
+		padding-top: 40%; 
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<title>My page</title>
+</head>
+
+<body>
+	<h1>Какой Дима сегодня ты?</h1>
+	<h3>Результат ищи внизу странички</h3>
+	<h4>Скучное задание</h4>
+	<div class="block"><input type="image" src="foto/d1.jpg" width="80%" height="80%" value="Hello!" name="hello" OnClick="a();">ИнстаДима</div>
+	<div class="block"><input type="image" src="foto/d5.jpg" width="80%" height="80%" value="Hello!" name="hello" OnClick="b();">Забавный</div>
+	<div class="block"><input type="image" src="foto/d3.jpg" width="80%" height="80%" value="Hello!" name="hello" OnClick="c();">Дима 2020</div>
+	<div class="block"><input type="image" src="foto/d4.jpg" width="80%" height="80%" value="Hello!" name="hello" OnClick="d();">Приветливый</div>
+	<div class="block"><input type="image" src="foto/d2.jpg" width="80%" height="80%" value="Hello!" name="hello" OnClick="e();">Просто Дима</div>
+	<div class="block"><input type="image" src="foto/d2.jpg" width="80%" height="80%" value="Hello!" name="hello" OnClick="f();">Дима на парах</div>
+	<div class="block"><input type="image" src="foto/d2.jpg" width="80%" height="80%" value="Hello!" name="hello" OnClick="g();">Сосредоточенный</div>
+	<div class="block"><input type="image" src="foto/d6.jpg" width="80%" height="80%" value="Hello!" name="hello" OnClick="h();">Тусовщик</div>
+	<script language="javascript">
+		function a() {
+			document.getElementById('info').innerHTML = 'Сколько у тебя подписчиков?';
+		}
+
+		function b() {
+			document.getElementById('info').innerHTML = 'Поздравляю, сегодня ты забавный!';
+		}
+
+		function c() {
+			document.getElementById('info').innerHTML = 'Не забудь маску на АИП!';
+		}
+
+		function d() {
+			document.getElementById('info').innerHTML = 'Привет!';
+		}
+
+		function e() {
+			document.getElementById('info').innerHTML = 'Дима, хватит проходить этот тест';
+		}
+
+		function f() {
+			document.getElementById('info').innerHTML = 'Да, Просто Дима, Дима на парах и сосредоточенный Дима это одно и то же';
+		}
+		function g() {
+			document.getElementById('info').innerHTML = 'Бывает и такое';
+		}
+		function h() {
+			document.getElementById('info').innerHTML = 'Классные очки!';
+		}
+	</script>
+	<div class="result">
+		<div id="info"> ВАШ РЕЗУЛЬТАТ:</div>
+	</div>
+</body></html>
