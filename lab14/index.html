@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		body {
+			background-image: url(img/fon.jpg);
+			text-align: center;
+			font-family: monospace;
+			font-size: 40px;
+		}
+		h1, h2
+		{
+			background:LightGray;
+		}
+
+		.block {
+			align-content: center;
+			background:LightGray;
+			float: left;
+			line-height: 50px;
+			font-size: 30px;
+			color: white;
+			width: 350px;
+			margin-right: 20px;
+			margin-left: 35px;
+			height: 400px;
+			margin-top: 10px;
+			padding-top: 4%;
+			opacity: 1;
+
+		}
+
+		.block:hover {
+			opacity: 0.8;
+		}
+		.block1 {
+			background: LightGray;
+			float: left;
+			line-height: 50px;
+			font-size: 30px;
+			color: white;
+			width: 700px;
+			margin-right: 10px;
+			margin-left: 10px;
+			height: 400px;
+			margin-top: 10px;
+			padding-top: 4%;
+
+		}
+
+		button.i {
+			padding: 5px 10px;
+			border-radius: 5px;
+			background: PeachPuff;
+			font-size: 30px;
+			border: 1px solid #666;
+		}
+
+		.text {
+			font-size: 38px;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<title>Посвящено Яне</title>
+</head>
+
+<body>
+	<h1>ФОТОГАЛЕРЕЯ, ПОСВЯЩЕННАЯ ЛЕСИНОЙ ЯНЕ МИХАЙЛОВНЕ</h1>
+	<h2>Скучное задание</h2>
+	<div class="block"><img src="img/1.jpg" width="90%" height="70%"></div>
+	<div class="block"><img src="img/9.jpg" width="90%" height="70%"></div>
+	<div class="block"><img src="img/7.jpg" width="90%" height="70%"></div>
+	<div class="block"><img src="img/3.jpg" width="90%" height="70%"></div>
+	<div class="block"><img src="img/8.jpg" width="90%" height="70%"></div>
+	<div class="block"><img src="img/6.jpg" width="90%" height="70%"></div>
+	<div class="block"><img src="img/4.jpg" width="90%" height="70%"></div>
+	<div class="block"><img src="img/2.jpg" width="90%" height="70%"></div>
+	<div class="block"><img src="img/10.jpg" width="90%" height="70%"></div>
+	<div class="block"><img src="img/5.jpg" width="90%" height="70%"></div>
+
+	<div class="block1">
+	<div class="result">
+		<p>Сколько котиков на страничке? <input class="text" type="text" id="z_1"></p>
+		<button onclick="proverit();" class="i">Проверить</button>
+		<div id="rezultat"></div>
+		<script>
+			function proverit() {
+				pr_otv_zadachi_1 = 11;
+				otv_uch_1 = document.getElementById('z_1').value;
+				ball = 0;
+				if (otv_uch_1 == pr_otv_zadachi_1) {
+					document.getElementById('rezultat').innerHTML = "Поздравляю, ты умеешь читать!";
+				} else {
+					document.getElementById('rezultat').innerHTML = "Ты так и не научился считать, ёжик. Я расскажу все Олегу Борисовичу.";
+				}
+
+			}
+		</script>
+	</div>
+		</div>
+</body></html>
