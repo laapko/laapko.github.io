@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		body {
+			background-color: #FAEBD7;
+			text-align: center;
+			font-family: monospace;
+			font-size: 30px;
+			font-style: italic;
+	
+		}
+
+		h1 {
+			text-align: left;
+			letter-spacing: 15pt;
+		}
+
+		h2 {
+			text-align: right;
+				letter-spacing: 12pt;
+		}
+
+		#block {
+			align-content: center;
+			background: PeachPuff;
+			float: left;
+			line-height: 50px;
+			font-size: 30px;
+			color: white;
+			width: 43%;
+			margin-right: 10px;
+			margin-left: 35px;
+			height: 400px;
+			margin-top: 10px;
+			padding-top: 4%;
+			opacity: 1;
+
+		}
+
+		#block:hover {
+			opacity: 0.8;
+		}
+
+		.text {
+			font-size: 38px;
+		}
+
+		.result {
+			margin-top: 40%;
+			padding-top: 4%;
+		}
+
+		.i {
+			color: #D87093;	
+		}
+
+		.pulek{
+			list-style-type: square;
+		}
+		.list {
+
+font-size:20pt;
+
+list-style-image: url(2.png);
+
+}
+
+.list a {
+
+position: relative;
+
+display: block;
+
+padding: 4pt;
+
+margin: 5pt;
+
+background: PeachPuff;
+
+color: Black;
+
+}
+
+.list a:hover {
+
+background: LightPink;
+
+}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<title>Посвящено Карине</title>
+</head>
+
+<body>
+	<h1>КАРИНА</h1>
+	<h2>ГРИНКЕВИЧ</h2>
+	<h3>Найди 5 отличий</h3>
+	<div id="block"><img src="IMG/1.jpg" width="350" height="350"></div>
+	<div id="block"><img src="IMG/2.jpg" width="350" height="350"></div>
+	<div class="result">
+		<p>Ты уже нашел все отличия? </p>
+		<a href="#" onclick="openbox('box'); return false" class="i">Проверить</a>
+
+		<div id="box" style="display: none;">Отличия <ul class="pulek">
+<li>На первой фотке Карина еще не куратор</li>
+				<li>На второй фотке Карина уже второй курс</li>
+
+				<li>На второй фотке Света проголодалась и ест яблочко</li>
+
+				<li>На второй фотке Карина изучила основы гипноза и вводит тебя в транс своим пронзительным взглядом</li>
+				<li>На первой фотке Карина еще не изучила основы гипноза и закрыла лицо рукой</li>
+
+			</ul>
+		</div>
+
+		<script>
+			function openbox(id) {
+
+				display = document.getElementById(id).style.display;
+
+				if (display == 'none') {
+
+					document.getElementById(id).style.display = 'block';
+
+				} else {
+
+					document.getElementById(id).style.display = 'none';
+
+				}
+
+			}
+		</script>
+
+	</div>
+	<h3>Мало кто знает, но Карина уже год лежит на полу. Карина делает то, что ей нравится, несмотря ни на что. Карина молодец, будь как Карина!</h3>
+	<ol class="list">
+
+<li><a href="#">просто</a></li>
+
+<li><a href="#">супер</a></li>
+
+<li><a href="#">мега</a></li>
+
+<li><a href="#">красивый</a></li>
+
+<li><a href="#">список</a></li>
+
+</ol>
+</body></html>
