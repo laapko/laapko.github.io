@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		display: flex;
+		font-size: 20px;
+		line-height: 5;
+		font-family: cursive;
+		background-image: url(img/FON.jpg);
+		background-size: cover;
+	}
+	#block {
+			align-content: center;
+			background: PeachPuff;
+			float: left;
+			line-height: 50px;
+			font-size: 30px;
+			color: white;
+			width: 43%;
+			margin-right: 10px;
+			margin-left: 35px;
+			height: 400px;
+			margin-top: 10px;
+			padding-top: 4%;
+			opacity: 1;
+
+		}
+
+
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<title>Розыгрыш</title>
+	<div id="block">
+	Поздравляю! Вы стали 100000 посетителем сайта! Заполните анкету и получите Ваш айфон 12!
+	<p>
+<a href="#" onclick="openbox('box'); return false" class="i">Забрать айфон</a><p></div>
+		<div id="box" style="display: none;">
+<img src="img/ha.png" width="180%" height ="60%">
+		</div>
+
+		<script>
+			function openbox(id) {
+
+				display = document.getElementById(id).style.display;
+
+				if (display == 'none') {
+
+					document.getElementById(id).style.display = 'block';
+
+				} else {
+
+					document.getElementById(id).style.display = 'none';
+
+				}
+
+			}
+		</script>
+</head></html>
