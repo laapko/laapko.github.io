@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		body {
+			background-image: url(images/f.jpg);
+			background-size: 5%;
+			text-align: center;
+			display: flex;
+		}
+
+		@-webkit-keyframes Slide {
+			0% {
+				bottom: 0;
+			}
+
+			25% {
+				bottom: 100%;
+			}
+
+			50% {
+				bottom: 200%;
+			}
+
+			75% {
+				bottom: 100%;
+			}
+
+			100% {
+				bottom: 0;
+			}
+		}
+
+		.diapo {
+			position: relative;
+			top: 0;
+			height: 600px;
+			width: 500px;
+			overflow: hidden;
+			margin-top: 4%;
+			margin-left: 10%;
+			margin-right: 10%;
+			float: left;
+			display: flex;
+
+
+		}
+
+		.slide {
+			position: relative;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			-webkit-animation-name: Slide;
+			-webkit-animation-duration: 20s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: ease-in-out;
+		
+		}
+
+		.diapo1,
+		.diapo2,
+		.diapo3,
+		.diapo4,
+		.diapo5,{
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			display: flex;
+		}
+
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<title>найс Полина</title>
+</head>
+
+<body>
+		<div class="diapo">
+			<ul class="slide">
+				<img class="diapo1" src="images/1.jpg">
+				<img class="diapo2" src="images/2.jpg">
+				<img class="diapo3" src="images/4.jpg">
+			</ul>
+		</div>
+
+
+
+	<div class="diapo">
+		<ul class="slide">
+			<img class="diapo5" src="images/11.jpg">
+			<img class="diapo6" src="images/12.1.jpg">
+			<img class="diapo7" src="images/12.jpg">
+		</ul>
+
+	</div>
+</body></html>
