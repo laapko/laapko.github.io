@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		body {
+			background-image: url(images/ff.jpg);
+			text-align: center;
+		}
+
+		.block {
+			float: left;
+		
+			font-size: 40px;
+			background: #FFCBDB;
+			color: white;
+			margin-top: 10px;
+			width: 370px;
+			margin-right: 20px;
+			margin-left: 30px;
+			text-align: center;
+			padding-top: 2%;
+		}
+
+		.block1 {
+			float: left;
+			line-height: 60px;
+			font-size: 20px;
+			background: #F19CBB;
+			color: white;
+			margin-top: 10px;
+			width: 100%;
+			margin-right: 20px;
+			margin-left: 20px;
+			text-align: center;
+			padding-top: 5%;
+			background-image: url(images/head.gif);
+		}
+		.l {
+text-align: center;
+display: inline-block;
+overflow: hidden;
+position: relative;
+text-decoration: none;
+}
+.l:before {
+display: block;
+background-color: rgb(0, 0, 0);
+content: "";
+height: 100%;
+opacity: 0;
+position: absolute;
+width: 100%;
+z-index: 2;
+}
+
+.l:after {
+font-family: 'Lucida Console';
+color: white;
+content: attr(alt);
+display: block;
+font-size: 16px;
+opacity: 0;
+padding: 0 3%;
+position: absolute;
+text-transform: none;
+top: 50%;
+-webkit-transform-origin: 50% 0%;
+transform-origin: 50% 0%;
+-webkit-transform: scale(0) translateY(-50%);
+transform: scale(0) translateY(-50%);
+width: 94%;
+z-index: 3;
+}
+
+.l img {
+border: none;
+display: block;
+z-index: 1;
+}
+
+.l:after {
+-webkit-transition: all 350ms ease-in-out;
+transition: all 350ms ease-in-out;
+}
+
+.l:hover:before {
+opacity: 0.6;
+}
+
+.l:hover:after {
+opacity: 1;
+-webkit-transform: scale(1) translateY(-50%);
+transform: scale(1) translateY(-50%);
+}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<title>My page</title>
+</head>
+
+<body>
+	<div class="block1">
+		<h1>Фотки которые Алинка хочет видеть в лабах про себя:</h1>
+		<a href="">если вам надоели зайчики, нажмите сюда</a>
+	</div>
+	<div class="block">
+		<a class="l" href="#" title="" alt="У"><img src="images/9.jpg" alt=""></a>
+	</div>
+	<div class="block">
+		<a class="l" href="#" title="" alt="Алинки"><img src="images/3.jpg" alt=""></a>
+	</div>
+	<div class="block">
+		<a class="l" href="#" title="" alt="все"><img src="images/11.jpg" alt=""></a>
+	</div>
+	<div class="block">
+		<a class="l" href="#" title="" alt="фотки"><img src="images/12.jpg" alt=""></a>
+	</div>
+	<div class="block">
+		<a class="l" href="#" title="" alt="красивые"><img src="images/10.jpg" alt=""></a>
+	</div>
+	<div class="block">
+		<a class="l" href="#" title="" alt="необъяснимо, но факт"><img src="images/13.jpg" alt=""></a>
+	</div>
+	<div class="block1">
+		<h1>Фотки которые все используют:</h1>
+	</div>
+	<div class="block">
+		<a class="l" href="#" title="" alt="Молодец! Очень интересно"><img src="images/8.jpg" alt=""></a>
+	</div>
+	<div class="block">
+		<a class="l" href="#" title="" alt="Внимание шутка Димы! Когда муж бьет"><img src="images/2.jpg" alt=""></a>
+	</div>
+		<div class="block">
+			<a class="l" href="#" title="" alt="Когда все опять кричат: Алинку в автозак"><img src="images/4.jpg" alt=""></a>
+	</div>
+		<div class="block">
+			<a class="l" href="#" title="" alt="Когда все снова кричат: Алинку в автозак"><img src="images/5.jpg" alt=""></a>
+	</div>
+		<div class="block">
+			<a class="l" href="#" title="" alt="чмок"><img src="images/6.jpg" alt=""></a>
+	</div>
+		<div class="block">
+					<a class="l" href="#" title="" alt="Алинка, учись!"><img src="images/7.jpg" alt=""></a>
+	</div>
+</body></html>
