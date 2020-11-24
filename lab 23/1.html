@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<style type="text/css">
+		body {
+			background-image: url(images/fon.jpg);
+			background-size: 100%;
+		
+		}
+		.e {
+	
+			margin-top: 24%;
+			
+		}
+		.f {
+			font-size: 300%;
+			color: aliceblue;
+			background-color: dimgray;
+			margin-left: 55%;/* Сдвиг сверху */ 
+		}
+	</style>
+
+<title>Часики</title>
+
+<script type="text/javascript">
+
+setInterval(function () {
+
+date = new Date(),
+
+hours = date.getHours(),
+
+minutes = date.getMinutes(),
+
+seconds = date.getSeconds(),
+
+hours = (hours < 10) ? '0' + hours : hours,
+
+minutes = (minutes < 10) ? '0' + minutes : minutes,
+
+seconds = (seconds < 10) ? '0' + seconds : seconds,
+
+document.getElementById('time').innerHTML = hours + ':' + minutes + ':' + seconds;
+
+}, 5000);
+
+</script>
+
+</head>
+
+<body>
+<div class="e">
+<span id="time" class="f">00:00:00</span></div>
+
+</body>
+
+</html>

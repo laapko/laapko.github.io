@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		body {
+			
+		background-image: url(images/fron.txt);
+		}
+		img {
+			margin-top: 16%;
+			margin-left: 37%;
+		}
+.btn-menu {
+  color: #fff;
+  background-color: #666;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+		.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+		.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: #eee;
+  height: 100%;
+  top: 0;
+  left: -200px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+		.hidden-menu-ticker {
+  display: none;
+}
+	</style>
+	
+	</head>
+	<body>
+		<script type="text/javascript">
+
+alert("Я конечно не гадалка но по-моему ваш браузер: " + navigator.appName);
+
+</script>
+	<a href="index.html">	<img src="images/4.jpg" width="350px" border="0"></a>
+	<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+<label class="btn-menu" for="hmt">
+  <span class="first"></span>
+  <span class="second"></span>
+  <span class="third"></span>
+</label>
+<ul class="hidden-menu">
+  <li><a href="1.html">На случай если вы забыли сколько времени</a></li>  
+  <li><a href="4.html">Нажмите, если не знаете, сколько будет 5 в 6 степени</a></li>
+  <li><a href="2.html">Вопросик для Дмитрия Витальевича</a></li>  
+	<li><a href="3.html">Увлекательная игра</a></li>
+</ul>
+
+</body></html>

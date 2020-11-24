@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		body {
+			background-color: #AAF0D1;
+			text-align: center;
+		}
+
+		.block {
+			float: left;
+			line-height: 50px;
+			font-size: 30px;
+			background: #1CAC78;
+			color: white;
+			margin-top: 10px;
+			width: 310px;
+			margin-right: 10px;
+			margin-left: 10px;
+			text-align: center;
+			padding-top: 2%;
+		}
+
+		.result {
+			font-size: 40px;
+			margin-top: 20%;
+		}
+
+		#info {
+		padding-top: 42%; 
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<title>Соц опрос</title>
+</head>
+
+<body>
+	<h1>Какая Картошка сегодня ты?</h1>
+	<h3>Результат ищи внизу странички</h3>
+	<div class="block"><input type="image" src="images/1.jpg" width="300px" height="300px" value="Hello!" name="hello" OnClick="a();">МикроНастя</div>
+	<div class="block"><input type="image" src="images/4.jpg" width="300px" height="300px" value="Hello!" name="hello" OnClick="b();">МегаНастя</div>
+	<div class="block"><input type="image" src="images/18.jpg" width="300px" height="300px" value="Hello!" name="hello" OnClick="c();">После Академии</div>
+	<div class="block"><input type="image" src="images/20.jpg" width="300px" height="300px" value="Hello!" name="hello" OnClick="d();">Гадалка</div>
+	<div class="block"><input type="image" src="images/21.jpg" width="300px" height="300px" value="Hello!" name="hello" OnClick="e();">Черепашка</div>
+	<div class="block"><input type="image" src="images/23.jpg" width="300px" height="300px" value="Hello!" name="hello" OnClick="f();">Спортивная</div>
+	<div class="block"><input type="image" src="images/6.jpg" width="300px" height="300px" value="Hello!" name="hello" OnClick="g();">Голодная</div>
+		<div class="block"><input type="image" src="images/7.jpg" width="300px" height="300px" value="Hello!" name="hello" OnClick="h();">На зимней сессии</div>
+		<script language="javascript">
+		function a() {
+			document.getElementById('info').innerHTML = 'ставлю твоей челке класс';
+		}
+
+		function b() {
+			document.getElementById('info').innerHTML = 'красиво';
+		}
+
+		function c() {
+			document.getElementById('info').innerHTML = 'менеджер-экономист информационных систем';
+		}
+
+		function d() {
+			document.getElementById('info').innerHTML = 'ты сдашь эту сессию';
+		}
+
+		function e() {
+			document.getElementById('info').innerHTML = 'в спорткомплексе Академии и не такое увидишь';
+		}
+
+		function f() {
+			document.getElementById('info').innerHTML = 'Я сяду в машину, поеду по серпантину К морю, красиво, увидимся в Портофино Сяду в машину, поеду по серпантину К морю, красиво, встречаемся в Портофино.';
+		}
+		function g() {
+			document.getElementById('info').innerHTML = 'уир-1 во время веб-дизайна';
+		}
+		function h() {
+			document.getElementById('info').innerHTML = '4 тоже оценка';
+		}
+	</script>
+	<div class="result">
+		<div id="info"> ВАШ РЕЗУЛЬТАТ:</div>
+	</div>
+
+</body></html>
