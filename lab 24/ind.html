@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Тестик</title>
+<meta charset="1251">
+<style type="text/css">
+	body {
+text-align: left;
+		font-size: 22px;
+		line-height: 1;
+		font-family: cursive;
+		background-image: url(images/fon2.jpg);
+		background-size: 100%;
+		color: whitesmoke;
+	}
+
+</style>
+</head>
+<body>
+<form>
+		<a href="index.html"><input type="button" class="button4" value="Главная"></a>
+  <p>В этой стране шуба и шапка Санта Клаусу ни к чему. Из одежды на нём только плавки, а из средства передвижения – водный мотоцикл.<br>
+    <label>
+      <input type="radio" name="f" value="Италия">
+      Италия</label>
+    <br>
+    <label>
+      <input type="radio" name="f" value="Голландия">
+     Голландия</label>
+    <br>
+    <label>
+      <input type="radio" name="f" value="Япония">
+      Испания</label>
+	    <br>
+	  <label>
+      <input type="radio" name="f" value="Австралия">
+      Австралия</label>
+    <br>
+  </p>
+	<p>В этой стране отмечают Новый год 13 апреля.<br>
+    <label>
+      <input type="radio" name="s" value="Таиланд">
+      Таиланд</label>
+    <br>
+    <label>
+      <input type="radio" name="s" value="Эфиопия">
+     Эфиопия</label>
+    <br>
+    <label>
+      <input type="radio" name="s" value="Индия">
+      Индия</label>
+	    <br>
+	  <label>
+      <input type="radio" name="s" value=" Норвегия">
+      Норвегия</label>
+    <br>
+  </p>
+		<p>В этой стране распространено животноводство,<br> поэтому фермеры обязательно поздравляют с Новым годом своих коров. <br>
+    <label>
+      <input type="radio" name="t" value="Бельгия">
+      Бельгия</label>
+    <br>
+    <label>
+      <input type="radio" name="t" value="Саудовская Аравия">
+    Дания</label>
+    <br>
+    <label>
+      <input type="radio" name="t" value="Италия">
+      Швеция</label>
+	    <br>
+	  <label>
+      <input type="radio" name="t" value="Испания">
+      Норвегия</label>
+    <br>
+  </p>
+  <label for="street">А у Вас уже есть новогоднее настроение?</label><br>
+  <select name="street" id="select">
+    <option value="0"></option>
+    <option value="после 24 лабы да">после 24 лабы да</option>
+	    <option value="какое настроение?">какое настроение?</option>
+	     <option value="готовлю оливье">готовлю оливье</option>
+  </select>
+  <p>
+    <input type="button" id="calc" value="Подсчитать результаты">
+    <input type="reset" value="Сброс">
+  </p>
+    Итого баллов: <input type="text" name="result" readonly>
+</form>
+	<script type="text/javascript">
+calc.onclick = function(){
+	  var myform = this.form,
+        chbx = myform['testGeorge'],
+        sum = 0;
+    if(myform.f.value == 'Австралия') sum++;
+	if(myform.s.value == 'Таиланд') sum++;
+   if(myform.t.value == 'Бельгия') sum++;
+    
+    myform.result.value = sum;
+};  
+</script>
+</body>
+ 
+</html>

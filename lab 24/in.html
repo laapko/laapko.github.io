@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+
+		font-size: 20px;
+		line-height: 1;
+		font-family: segoe script;
+		color: aliceblue;
+	}
+
+	/* Google Fonts */
+	@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+	/* Global */
+	html {
+		min-height: 100%;
+
+	}
+
+	.line-1 {
+		position: relative;
+		border-right: 2px solid rgba(255, 255, 255, .75);
+		font-size: 150%;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		transform: translateY(-50%);
+	}
+
+	/* Animation */
+	.anim-typewriter {
+		animation: typewriter 10s steps(44) 3s 1 normal both,
+			blinkTextCursor 500ms steps(40) infinite normal;
+	}
+
+	@keyframes typewriter {
+		from {
+			width: 0;
+		}
+
+		to {
+			width: 24em;
+		}
+	}
+
+	@keyframes blinkTextCursor {
+		from {
+			border-right-color: rgba(255, 255, 255, .75);
+		}
+
+		to {
+			border-right-color: transparent;
+		}
+	}
+
+	h1 {
+		font-size: 150px;
+	}
+
+	.top {
+		background-image: url(images/snow.gif);
+		overflow: hidden;
+		background-size: 100%;
+
+	}
+
+
+	.middle {
+		box-shadow: 0 0 30px 30px black inset;
+		height: 60%;
+		padding: 10px;
+		color: rgba(255, 255, 255, .75);
+		font-family: 'segoe script', monospace;
+		background-color: rgb(25, 25, 25);
+	}
+
+	input.button4 {
+		position: relative;
+		display: inline-block;
+		font-family: segoe script;
+		font-size: 40px;
+		font-weight: 700;
+		color: rgb(245, 245, 245);
+		text-shadow: 0 -1px rgba(0, 0, 0, .1);
+		text-decoration: none;
+		user-select: none;
+		padding: .3em 1em;
+		outline: none;
+		border: solid;
+		margin-left: 42%;
+		margin-top: 3%;
+		border-radius: 3px;
+		background: MidnightBlue;
+		animation: pulsate 1.2s linear infinite;
+	}
+
+	input.button4:hover {
+		-webkit-animation-play-state: paused;
+		animation-play-state: paused;
+		cursor: pointer;
+	}
+
+	input.button4:active {
+		top: 1px;
+		color: #fff;
+		text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px #ffd, 0 0 8px #fff;
+		box-shadow: 0 -1px 3px rgba(0, 0, 0, .3), 0 1px 1px #fff, inset 0 1px 2px rgba(0, 0, 0, .8), inset 0 -1px 0 rgba(0, 0, 0, .05);
+	}
+
+	@-webkit-keyframes pulsate {
+		50% {
+			color: #fff;
+			text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px #ffd, 0 0 8px #fff;
+		}
+	}
+
+	@keyframes pulsate {
+		50% {
+			color: #fff;
+			text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px #ffd, 0 0 8px #fff;
+		}
+	}
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<title>NewYear</title>
+	<div class="top">
+		<h1 align="center">Lets write</h1>
+		<h2 align="center">make a wish</h2>
+		<table cellpadding="40" cellspacing="50" width="50%" align="center">
+			<tr>
+				<a href="index.html"><input type="button" class="button4" value="Главная"></a>
+			</tr>
+		</table>
+	</div>
+	<div class="middle" align="center">
+		<p>Дорогой Дед Мороз!</p>
+		<p>Мальчики и девочки уира очень хорошо вели себя в этом году. </p>
+		<p class="line-1 anim-typewriter">Наше желание - сдать зимнюю сессию.</p>
+		<p>Мы в тебя верим, Дед Мороз. С любовью, уир, 2 курс</p>
+	</div>
+</head></html>
