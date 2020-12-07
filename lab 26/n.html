@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		font-size: 15px;
+		line-height: 1;
+		text-decoration: none;
+		background-image: url(img/fon.gif);
+		background-size: 100%;
+		text-align: center;
+	}
+
+	h1 {
+		padding-top: 20px;
+		font-size: 60px;
+
+	}
+
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" media="screen">
+	<title>Моркевичь</title>
+</head>
+<body onload="movie();"><img src="img/gr1.jpg" align="center" width="500" height="550" border="0"></body>
+<h1>ВЫ УГАДАЛИ!!!</h1>
+
+<script type="text/javascript">
+		var i = 1;
+		function movie() {
+			eval("document.images[0].src= 'img/gr" + i + ".jpg';");
+				i++;
+				if (i < 11) {
+					setTimeout("movie();", 500);
+				}
+			}
+			</script>
+
+</html>

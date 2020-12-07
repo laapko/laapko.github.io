@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+		font-size: 15px;
+		line-height: 1;
+
+	}
+
+	h2 {
+		padding-top: 10px;
+		font-size: 50px;
+		top: 0;
+	
+
+	}
+
+	.top {
+		width: 100%;
+		background-color: Gainsboro;
+		position: absolute;
+
+	}
+
+	.top1 {
+		background-color: blanchedalmond;
+		width: 100%;
+	
+	}
+
+	.menu {
+		float: right;
+		width: 60%;
+		padding-top: 5%;
+	
+	}
+
+	.middle {
+		background-color: #858585;
+
+	}
+
+	.block {
+
+		float: left;
+		margin-right: 60%;
+		margin-left: 10%;
+		line-height: 40px;
+		font-size: 40px;
+		background: PeachPuff;
+		color: black;
+		margin-top: 20px;
+		width: 27%;
+		text-align: center;
+	}
+
+	.block1 {
+		color: #fff;
+		float: right;
+		margin-left: 60%;
+		margin-right: 10%;
+		line-height: 40px;
+		font-size: 31px;
+		color: black;
+		width: 27%;
+		text-align: center;
+		border: 0;
+		background: #6d6d6d;
+		color: #fff;
+		transition: all 0.3s ease;
+	}
+
+	.block1:hover {
+		background: PeachPuff;
+	}
+
+	.dropbtn {
+		background-color: LightGray;
+		color: white;
+		padding: 16px;
+		font-size: 22px;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	.dropbtn:hover,
+	.dropbtn:focus {
+		background-color: Black;
+		text-decoration: none;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		text-decoration: none;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		overflow: auto;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+		text-decoration: none;
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown a:hover {
+		background-color: #ddd;
+		text-decoration: none;
+	}
+
+	.show {
+		display: block;
+		text-decoration: none;
+	}
+	 a { 
+    text-decoration: none;
+		 color: beige;/* Отменяем подчеркивание у ссылки */
+   } 
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" media="screen">
+	<title>Моркевичь</title>
+	
+</head>
+
+<body>
+	<div class="top">
+			<h2>Markevich.com</h2>
+		<div class="top1"><img src="img/gr5.jpg" height="200">
+			<div class="menu"><button onclick="myFunction()" class="dropbtn">Меню</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="https://www.instagram.com/_mmmarkevich_/">Инстаграмчик</a>
+					<a href="https://vk.com/mmmarkevich">Вконтактик</a>
+					<a href="http://smoodle.pac.by/moodle/">Любимая соц сеть Маши</a>
+				</div>
+				<button class="dropbtn" text-decoration="none"><a href="u.html">Угадайте</a></button>
+				<button class="dropbtn"><a href="k.html">Куда</a></button>
+				<button class="dropbtn"><a href="n.html">Нажать</a></button>
+			</div>
+		</div>
+		<div class="middle" align="center">
+			<div>
+
+				<div class="block">
+					<img src="img/gr16.jpg" width="320" height="350" border="0">
+				</div>
+
+				<div class="block1">
+					Я прошу Вас всех запомнить это событие. Первая лабораторная, когда Дмитрий Витальевич не спросит, где Маша, потому что она везде....
+				</div>
+				<div class="block">
+					<img src="img/gr15.jpg" width="90%" height="350">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+			/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+				if (!event.target.matches('.dropbtn')) {
+
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+	</script>
+
+</body></html>

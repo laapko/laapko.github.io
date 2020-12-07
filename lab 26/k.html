@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+	<style type="text/css">
+	body {
+		font-size: 15px;
+		line-height: 1;
+		text-decoration: none;
+		text-align: center;
+	}
+
+</style>
+<head>
+
+<meta charset="utf-8" />
+
+<title>А ВОТ И НЕ УГАДАЛИ</title>
+
+<script type="text/javascript">
+
+number=0
+
+imgpicture=new Array()
+
+imgpicture[0]=new Array()
+
+imgpicture[1]=new Array()
+
+imgpicture[2]=new Array()
+
+imgpicture[0].src="img/gr13.jpg"
+
+imgpicture[1].src="img/gr12.jpg"
+
+imgpicture[2].src="img/gr14.jpg"
+
+function slides() {
+
+document.images[0].src=imgpicture[number].src
+
+number++;
+
+if (number == 2) number == 0;
+
+setTimeout("slides()",1000)
+
+}
+
+</script>
+
+</head>
+	<h1>Маша спит, выйдите, пожалуйста</h1>
+
+<body bgcolor="tan" onload="slides()">
+
+<img src="img/gr1.jpg" width="500" height="500" alt="">
+
+</body>
+
+</html>
