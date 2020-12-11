@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body {
+
+		background-color: linen;
+		text-align: center;
+		font-size: 40px;
+	}
+
+		button.a {
+			background-color: lightgoldenrodyellow;
+			font-size: 50px;
+		}
+.btn-menu {
+  color: #fff;
+  background-color: #666;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+		.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+		.hidden-menu {
+			font-size: 20px;
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: #eee;
+  height: 100%;
+  top: 0;
+  left: -200px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+		.hidden-menu-ticker {
+  display: none;
+}
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" media="screen">
+	<title>пупсики уира-1</title>
+</head>
+	<p>Выбери своего пупсика</p>
+<body onload="movie();"><img src="img/gr1.jpg" align="center" width="500" height="550" border="0" onclick="page()"></body>
+<button class="a" onclick="rand()">Выбираю</button>
+	<div id="info"> ВАШ ПУПСИК:</div>
+<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+<label class="btn-menu" for="hmt">
+  <span class="first"></span>
+  <span class="second"></span>
+  <span class="third"></span>
+</label>
+<ul class="hidden-menu">
+  <li><a href="https://laapko.github.io/lab%2018/">Алинка</a></li>  
+  <li><a href="https://laapko.github.io/lab%2021/">Булочка Даша</a></li>
+  <li><a href="https://laapko.github.io/lab10/">Владик</a></li>  
+	<li><a href="https://laapko.github.io/lab15/">Каринка</a></li>
+	  <li><a href="https://laapko.github.io/lab%2023/">Картошка</a></li>  
+  <li><a href="https://laapko.github.io/lab%2019/">Лапка</a></li>
+  <li><a href="https://laapko.github.io/lab20/">Лизун</a></li> 
+	  <li><a href="https://laapko.github.io/lab%2026/">Моркевичьььь</a></li>  
+  <li><a href="https://laapko.github.io/lab12/">Повелительница жаб</a></li>
+  <li><a href="https://laapko.github.io/lab%2025/">Ролина Помановская</a></li>  
+	<li><a href="https://laapko.github.io/lab11/">Светка</a></li>
+	  <li><a href="https://laapko.github.io/lab13/indexmain.html">стрУповец, с днем рождения!</a></li>  
+  <li><a href="https://laapko.github.io/lab%2017/">Урбон</a></li>
+  <li><a href="https://laapko.github.io/lab%2016/">Челапка</a></li>  
+	<li><a href="https://laapko.github.io/lab14/">Яна Лёсина</a></li>
+	<li><a href="i.html">Тут нет пупсиков</a></li>
+	<li><a href="ind.html">Тут тоже</a></li>
+</ul>
+<script type="text/javascript">
+		var i = 1;
+		function movie() {
+			eval("document.images[0].src= 'img/gr" + i + ".jpg';");
+				i++;
+				if (i > 15) i =1; 
+					setTimeout("movie();", 280);
+			}
+			</script>
+	<script>
+			function rand() {
+				var a = Math.round(Math.random() * 14)
+				// это число должно совпадать с максимальным индексом таблицы ссылок
+				txt = new Array();
+				txt[0] = "Булочка Даша"
+				txt[1] = "Владик"
+				txt[2] = "Ролина Помановская"
+				txt[3] = "Урбон"
+				txt[4] = "Челапка"
+				txt[5] = "Алинка"
+				txt[6] = "Повелительница жаб"
+				txt[7] = "Светка"
+				txt[8] = "Каринка"
+				txt[9] = "стрУповец, с днем рождения!"
+				txt[10] = "Картошка"
+				txt[11] = "Лизун"
+				txt[12] = "Лапка"
+				txt[13] = "Яна Лёсина"
+				txt[14] = "Моркевичььььььь"
+				document.getElementById('info').innerHTML = ("" + txt[a] + "");	
+			}
+		</script>
+
+</html>

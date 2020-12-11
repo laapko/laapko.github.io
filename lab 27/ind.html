@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Сосмыслом</title>
+ </head>
+ <body>
+ <img id="image" src="img/3.jpg" onClick="imgsrc();">
+ <script language="javascript">
+ let i=0;
+ let image=document.getElementById("image");
+ let imgs=new Array('img/3.jpg','img/4.jpg');
+ function imgsrc() {
+ i++;
+ image.src=imgs[i];
+ }
+ </script>
+ </body>
+ </html>
